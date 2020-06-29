@@ -7,22 +7,75 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><img src="img/filmmaker.png"></li>
-            <li><a class="active" href="homepage.html">Home</a></li>
-            <li><a href="page1.html">movies</a></li>
-            <li class="dropdown">
-                <a class="dropbtn">Top 10</a>
-                <div class="dropdown-content">
-                  <a href="page1.html">top 10 movies</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-            </li>
-            <li><input class="search" type="text" placeholder="Search.."></li>
-            <li><button class="button" type="submit"></button></li>
-        </ul>
+    <div class="flexer">
+        <div class="sidebar">
+            <h1>Genres:</h1>
+            <ul>
+                <li><a href=#familymovies>Family Movies</a></li>
+                <li><a href=#fantasymovies> Fantasy Movies</a></li>
+                <li><a href=#fantasymovies> Comedy Movies</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="topnav">
+                <ul>
+                    <li><img class="filmmaker" src="./img/filmmaker.png"></li>
+                    <li><a class="active" href="./homepage.html">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#topmovies">Top rated movies</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Genres</a>
+                        <div class="dropdown-content">
+                          <a href="#familymovies">Family</a>
+                          <a href="#fantasymovies">Fantasy</a>
+                          <a href="#">Comedy</a>
+                        </div>
+                    </li>
+                    <li><a><img class="profile" src="./img/snap.png"></a></li>
+                    <li><a href="https://instagram.com/ireema76?igshid=155a95x8nudf"><img class="profile" src="./img/insta.png"></a></li>
+
+                    <li>  
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                        </form>
+                    </li>   
+                   <a href="./signup.html"> <li class="signup">sign up</li></a>
+                </ul>    
+        
+            </div>
+        
+            <div id="topmovies" class="toprated">
+                <h2>Top Rated Movies</h2>
+                <a href="./page1.html"><img src="./img/movie1.jpg"></a>
+                <a href="./page2.html"><img src="./img/movie2.jpg"></a>
+                <img src="./img/movie3.jpg">
+                <img src="./img/movie4.jpg">
+                <img src="./img/movie6.jpg">
+                <img src="./img/movie7.jpg">
+            </div>
+        
+            <div id="fantasymovies" class="toprated">
+                <h2>Fantasy Movies</h2>
+                <img src="./img/fantasy1.jpg">
+                <img src="./img/fantasy2.jpg">
+                <img src="./img/fantasy3.jpg">
+                <img src="./img/fantasy4.jpg">
+                <img src="./img/fantasy5.jpg">
+                <img src="./img/fantasy6.jpg">
+            </div>
+            
+            <div id="familymovies" class="toprated">
+                <h2>Family Movies</h2>
+                <img src="./img/fantasy1.jpg">
+                <img src="./img/fantasy2.jpg">
+                <img src="./img/fantasy3.jpg">
+                <img src="./img/fantasy4.jpg">
+                <img src="./img/fantasy5.jpg">
+                <img src="./img/fantasy6.jpg">
+            </div>
+        </div>
+        
+      
     </div>
 
 </body>
